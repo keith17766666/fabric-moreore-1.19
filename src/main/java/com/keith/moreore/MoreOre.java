@@ -1,5 +1,8 @@
 package com.keith.moreore;
 
+import com.keith.moreore.block.ModBlocks;
+import com.keith.moreore.item.ModItemGroup;
+import com.keith.moreore.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +13,8 @@ public class MoreOre implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerItemGroups();
+		ModItems.RegisterModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
