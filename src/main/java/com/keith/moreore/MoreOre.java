@@ -15,6 +15,7 @@ public class MoreOre implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.RegisterModItems();
+
 		ModBlocks.registerModBlocks();
 	}
 }

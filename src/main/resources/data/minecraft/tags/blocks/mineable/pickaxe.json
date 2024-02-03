@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "moreore:tanzanite_ore",
+    "moreore:tanzanite_block",
+    "moreore:deepslate_tanzanite_ore",
+    "moreore:netherrack_tanzanite_ore",
+    "moreore:endstone_tanzanite_ore"
+  ]
+}
