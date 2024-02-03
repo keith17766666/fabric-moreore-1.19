@@ -1,6 +1,7 @@
 package com.keith.moreore.block;
 
 import com.keith.moreore.MoreOre;
+import com.keith.moreore.block.costom.JumpyBlock;
 import com.keith.moreore.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -35,6 +36,9 @@ public class ModBlocks {
     public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
                     UniformIntProvider.create(3, 7)),
+            ModItemGroup.TANZAITE);
+    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+            new JumpyBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
             ModItemGroup.TANZAITE);
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);

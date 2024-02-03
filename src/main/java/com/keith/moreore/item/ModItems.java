@@ -1,6 +1,7 @@
 package com.keith.moreore.item;
 
 import com.keith.moreore.MoreOre;
+import com.keith.moreore.item.costom.EightBallsItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -16,12 +17,15 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings()));
+    public static final Item EIGHT_BALL_ITEM = registerItem("eight_ball",
+            new EightBallsItem(new FabricItemSettings().maxCount(1)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MoreOre.MOD_ID, name), item);
     }
     public static void addItemsToItemGroup() {
         addtoItemGroup(ModItemGroup.TANZAITE, RAW_TANZANITE);
         addtoItemGroup(ModItemGroup.TANZAITE, TANZANITE);
+        addtoItemGroup(ModItemGroup.TANZAITE, EIGHT_BALL_ITEM);
     }
     private static void addtoItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

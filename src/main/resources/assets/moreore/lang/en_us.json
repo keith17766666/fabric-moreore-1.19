@@ -1,12 +1,14 @@
 {
   "item.moreore.raw_tanzanite": "Raw Tanzanite",
   "item.moreore.tanzanite": "Tanzanite",
+  "item.moreore.eight_ball": "Random Number Ball",
 
   "block.moreore.tanzanite_block": "Block of Tanzanite",
   "block.moreore.tanzanite_ore": "Tanzanite Ore",
   "block.moreore.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.moreore.netherrack_tanzanite_ore": "Nether rack Tanzanite Ore",
   "block.moreore.endstone_tanzanite_ore": "End stone Tanzanite Ore",
+  "block.moreore.jumpy_block": "Jumpy Block",
 
   "itemGroup.moreore.tanzanite": "Tanzanite Tab"
 }
