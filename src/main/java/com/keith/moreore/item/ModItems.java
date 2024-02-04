@@ -35,6 +35,8 @@ public class ModItems {
         addtoItemGroup(ModItemGroup.TANZAITE, RAW_TANZANITE);
         addtoItemGroup(ModItemGroup.TANZAITE, TANZANITE);
         addtoItemGroup(ModItemGroup.TANZAITE, EIGHT_BALL_ITEM);
+        addtoItemGroup(ModItemGroup.TANZAITE, EGGPLANT);
+        addtoItemGroup(ModItemGroup.TANZAITE, EGGPLANT_SEEDS);
     }
     private static void addtoItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

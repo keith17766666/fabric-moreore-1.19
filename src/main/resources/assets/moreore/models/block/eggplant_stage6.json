@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "moreore:item/eggplant_stage6"
+    "crop": "moreore:block/eggplant_stage6"
   }
 }
