@@ -6,6 +6,7 @@ import com.keith.moreore.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.event.Level;
 
 public class MoreOre implements ModInitializer {
 	public static final String MOD_ID = "moreore";
@@ -14,6 +15,7 @@ public class MoreOre implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
+
 		ModItems.RegisterModItems();
 
 		ModBlocks.registerModBlocks();

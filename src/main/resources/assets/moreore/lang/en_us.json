@@ -2,6 +2,8 @@
   "item.moreore.raw_tanzanite": "Raw Tanzanite",
   "item.moreore.tanzanite": "Tanzanite",
   "item.moreore.eight_ball": "Random Number Ball",
+  "item.moreore.eggplant": "Eggplant",
+  "item.moreore.eggplant_seed": "Eggplant Seeds",
 
   "block.moreore.tanzanite_block": "Block of Tanzanite",
   "block.moreore.tanzanite_ore": "Tanzanite Ore",
@@ -10,6 +12,7 @@
   "block.moreore.endstone_tanzanite_ore": "End stone Tanzanite Ore",
   "block.moreore.jumpy_block": "Jumpy Block",
   "block.moreore.tanzanite_lamp": "Tanzanite Lamp",
+  "block.moreore.eggplant_crop": "Eggplant Crop",
 
   "itemGroup.moreore.tanzanite": "Tanzanite Tab"
 }

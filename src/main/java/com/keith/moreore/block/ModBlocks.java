@@ -1,13 +1,17 @@
 package com.keith.moreore.block;
 
 import com.keith.moreore.MoreOre;
+import com.keith.moreore.block.costom.EggPlantCropBlock;
 import com.keith.moreore.block.costom.JumpyBlock;
 import com.keith.moreore.block.costom.TanzaniteLamp;
 import com.keith.moreore.item.ModItemGroup;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -44,8 +48,13 @@ public class ModBlocks {
     public static final Block TANZANITE_LAMP = registerBlock("tanzanite_lamp",
             new TanzaniteLamp(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().luminance(
                     state -> state.get(TanzaniteLamp.LIT) ? 15 : 0 )), ModItemGroup.TANZAITE);
+    public static final Block EGGPLANT_CROP = registerBlockWithoutItem("eggplant_crop",
+            new EggPlantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
+        return Registry.register(Registries.BLOCK, new Identifier(MoreOre.MOD_ID, name), block);
+    }
+    private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(MoreOre.MOD_ID, name), block);
     }
     private static Item registerBlockItem(String name, Block block, ItemGroup tab) {

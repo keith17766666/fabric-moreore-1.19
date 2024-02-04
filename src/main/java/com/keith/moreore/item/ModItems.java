@@ -1,9 +1,12 @@
 package com.keith.moreore.item;
 
 import com.keith.moreore.MoreOre;
+import com.keith.moreore.block.ModBlocks;
 import com.keith.moreore.item.costom.EightBallsItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
@@ -19,6 +22,12 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item EIGHT_BALL_ITEM = registerItem("eight_ball",
             new EightBallsItem(new FabricItemSettings().maxCount(1)));
+    public static final Item EGGPLANT_SEEDS = registerItem("eggplant_seeds",
+            new AliasedBlockItem(ModBlocks.EGGPLANT_CROP
+                    ,new FabricItemSettings()));
+    public static final Item EGGPLANT = registerItem("eggplant",
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder()
+                     .hunger(4).saturationModifier(4f).build())));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MoreOre.MOD_ID, name), item);
     }
